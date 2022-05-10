@@ -26,13 +26,25 @@ MSI Auth - https://docs.microsoft.com/en-us/sql/connect/jdbc/connecting-using-az
 
 # Screenshots
 
-![Activate VM Identity](/screenshots/Screenshot133951.jpeg)
+### Active VM Identity
 
-![Grant VM Identity access to Azure SQL](/screenshots/Screenshot134049.jpg)
+![Activate VM Identity](screenshots/Screenshot133951.jpeg)
 
-![ODBC Setup 1](/screenshots/Screenshot134049.jpg)
+### Grant VM Identity Access to Azure SQL
+![Grant VM Identity access to Azure SQL](screenshots/Screenshot134049.jpeg)
 
-![ODBC Setup 2](/screenshots/Screenshot135701.jpg)
+### ODBC Setup
+![ODBC Setup 1](screenshots/Screenshot134049.jpeg)
 
-![Registry Setup](/screenshots/Screenshot135809.jpg)
+![ODBC Setup 2](screenshots/Screenshot135701.jpeg)
+
+
+### Registry Change (Only if application connection string cannot be changed)
+
+ODBC DSN UI Dialog box does not allow us to set MSI auth, this can be set  by modifying the windows registry entry (regedit.exe)
+
+If the application can pass in the Authentication parameter as below in the connection string, then the registry change is not required
+"DSN=odbc17azuresqldb;Authentication=ActiveDirectoryMsi"
+
+![Registry Setup](screenshots/Screenshot135809.jpeg)
 
