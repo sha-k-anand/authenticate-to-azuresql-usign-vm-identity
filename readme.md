@@ -26,13 +26,13 @@ MSI Auth - https://docs.microsoft.com/en-us/sql/connect/jdbc/connecting-using-az
 
 # Screenshots
 
-![Activate VM Identity](/screenshots/Screenshot%202022-05-10%20133951.jpg)
+![Activate VM Identity](/screenshots/Screenshot133951.jpeg)
 
-![Grant VM Identity access to Azure SQL](/screenshots/Screenshot%202022-05-10%20134049.jpg)
+![Grant VM Identity access to Azure SQL](/screenshots/Screenshot134049.jpg)
 
-![ODBC Setup 1](/screenshots/Screenshot%202022-05-10%20134049.jpg)
+![ODBC Setup 1](/screenshots/Screenshot134049.jpg)
 
-![ODBC Setup 2](/screenshots/Screenshot%202022-05-10%20135701.jpg)
+![ODBC Setup 2](/screenshots/Screenshot135701.jpg)
 
-![Registry Setup](/screenshots/Screenshot%202022-05-10%20135809.jpg)
+![Registry Setup](/screenshots/Screenshot135809.jpg)
 
