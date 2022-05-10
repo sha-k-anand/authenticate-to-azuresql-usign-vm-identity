@@ -5,10 +5,10 @@ Many organizations do not approve the use of SQL logins to Database due to vario
 
 If your application that connects to Azure SQL DB or SQL MI is running on an Azure VM. You can avoid  SQL Logins and use the VMs identity to connect to Azure SQL DB/SQL MI.
 
-Here are the steps (refer to screenshots folder for more info)
+Here are the steps (refer to screenshots below for more info)
 1. Activate Managed Identity on Azure VM
 2. Download ODBC Driver 17 on the VM
-3. Grant VM identity access to Azure SQL DB or SQL MI
+3. Grant VM identity access to Azure SQL DB or SQL MI (using external provider)
 4. Setup a ODBC Datasource using ODBC 17
 5. Update application connection string 
 
@@ -21,3 +21,18 @@ If application connection string change is not possible, update the windows regi
 ODBC Driver 17 - https://www.microsoft.com/en-us/download/details.aspx?id=56567
 
 MSI Auth - https://docs.microsoft.com/en-us/sql/connect/jdbc/connecting-using-azure-active-directory-authentication?view=sql-server-ver15
+
+
+
+# Screenshots
+
+![Activate VM Identity](/screenshots/Screenshot%202022-05-10%20133951.jpg)
+
+![Grant VM Identity access to Azure SQL](/screenshots/Screenshot%202022-05-10%20134049.jpg)
+
+![ODBC Setup 1](/screenshots/Screenshot%202022-05-10%20134049.jpg)
+
+![ODBC Setup 2](/screenshots/Screenshot%202022-05-10%20135701.jpg)
+
+![Registry Setup](/screenshots/Screenshot%202022-05-10%20135809.jpg)
+
